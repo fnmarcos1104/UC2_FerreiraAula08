@@ -86,8 +86,8 @@ try:
             by='recuperacao_veiculos', ascending=False))
     
     
-    df_recup_veiculo_outliers_inf = df_recup_veiculo[
-        df_recup_veiculo['recuperacao_veiculos'] > limite_inferior]
+    df_recup_veiculo_outliers_inf = df_qvendas[
+        df_qvendas['recuperacao_veiculos'] > limite_inferior]
     
     print('\nDPs com recuperações inferiores as demais:')
     print(30*'-')
